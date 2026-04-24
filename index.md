@@ -6,8 +6,13 @@ lang-ref: home
 
 ## Bienvenue au cours sur les modèles de diffusion 🤗 !
 
-> [!IMPORTANT]  
-> Paragraphe sur pourquoi sur ce site au lieu du site officiel d'HF
+<div style="border-left: 4px solid #8957e5; background-color: #1a1230; padding: 12px 16px; border-radius: 4px; margin: 16px 0;">
+  <strong style="color: #8957e5;">⚠️ IMPORTANT</strong>
+  <p style="margin: 4px 0 0 0;">Le cours original date de 2023 et a été traduit en français 2 mois après sa sortie.<br>
+Cependant, le répertoire GitHub du cours original n'a pas été configuré pour accueillir des traductions (c'était planifié par les équipes d'Hugging Face mais n'a finalement jamais été fait). Ainsi la traduction française n'apparaît pas sur hf.co/learn.<br>
+Ainsi, j'ai créé ce site comme alternative.</p>
+</div>
+Paragraphe sur pourquoi sur ce site au lieu du site officiel d'HF
 
 ## À quoi s'attendre ?
 
