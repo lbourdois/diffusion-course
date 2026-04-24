@@ -1,7 +1,7 @@
 permalink:           pretty
 
 # Setup
-title:               'Cours Modeles de diffusion'
+title:               'Cours sur les modèles de diffusion'
 tagline:             'Adaptation francaise'
 url:                 'https://lbourdois.github.io'
 baseurl:             '/diffusion-course'
@@ -10,8 +10,8 @@ default_lang:        'fr'
 
 # About/contact
 author:
-  name:              Zeming Lin
-  url:               https://twitter.com/ebetica
+  name:              Loïck BOURDOIS
+  url:               https://twitter.com/BdsLoick
 github:
   repo:              https://github.com/lbourdois/diffusion-course/
 
