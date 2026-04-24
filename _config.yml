@@ -1,0 +1,60 @@
+permalink:           pretty
+
+# Setup
+title:               'Cours Modeles de diffusion'
+tagline:             'Adaptation francaise'
+url:                 'https://lbourdois.github.io'
+baseurl:             '/diffusion-course'
+homepage_title:      Accueil
+default_lang:        'fr'
+
+# About/contact
+author:
+  name:              Zeming Lin
+  url:               https://twitter.com/ebetica
+github:
+  repo:              https://github.com/lbourdois/diffusion-course/
+
+# Custom vars
+version:             1.0.0
+
+src:                 "."
+default_theme:       "ayu"
+
+# To use hljs, disable the default highlighter
+# We also use a built-in math engine so gotta disable that too
+kramdown:
+  syntax_highlighter_opts:
+    disable : true
+  math_engine: null
+
+exclude:
+  - README.md
+
+# Chapter Configuration (up to a 2 level nested list)
+
+prologues: []
+chapters:
+  - path: fr/unit1/1.md
+    sections:
+      - path: fr/unit1/2.md
+      - path: fr/unit1/3.md
+  - path: fr/unit2/1.md
+    sections:
+      - path: fr/unit2/2.md
+      - path: fr/unit2/3.md
+  - path: fr/unit3/1.md
+    sections:
+      - path: fr/unit3/2.md
+      - path: fr/unit3/3.md
+  - path: fr/unit4/1.md
+    sections:
+      - path: fr/unit4/2.md
+      - path: fr/unit4/3.md
+  - path: fr/events/1.md
+    sections:
+      - path: fr/events/2.md
+      - path: fr/events/3.md
+      - path: fr/events/4.md
+epilogues: []
+

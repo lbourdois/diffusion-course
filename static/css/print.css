@@ -1,0 +1,309 @@
+
+@page {
+    margin: 0;
+}
+
+html {
+    background: var(--bg) !important;
+    color: var(--fg) !important;
+    min-height: 100%;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+body,
+#page-wrapper {
+    background: var(--bg) !important;
+    color: var(--fg) !important;
+    min-height: 100vh;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+#sidebar,
+#menu-bar,
+.nav-chapters,
+.mobile-nav-chapters {
+    display: none;
+}
+
+#page-wrapper.page-wrapper {
+    transform: none;
+    margin-left: 0px;
+    overflow-y: initial;
+}
+
+#content {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+.content main {
+    max-width: none;
+    margin: 0;
+}
+
+.page {
+    overflow-y: initial;
+    padding: 10mm 14mm;
+    background: var(--bg) !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+code {
+    background-color: var(--quote-border);
+    border-radius: 5px;
+
+    /* Force background to be printed in Chrome */
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+pre > .buttons {
+    z-index: 2;
+}
+
+a, a:visited, a:active, a:hover {
+    color: var(--links);
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    page-break-inside: avoid;
+    page-break-after: avoid;
+}
+
+pre {
+    page-break-inside: auto;
+    break-inside: auto;
+    white-space: pre-wrap;
+}
+
+code {
+    page-break-inside: avoid;
+    white-space: pre-wrap;
+}
+
+pre > code {
+    page-break-inside: auto;
+    break-inside: auto;
+}
+
+img, svg {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    max-width: 100% !important;
+    max-height: 700px !important;
+    width: auto !important;
+    height: auto !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure,
+p:has(> img),
+p:has(> svg) {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+blockquote {
+    page-break-inside: auto;
+    break-inside: auto;
+}
+
+table {
+    page-break-inside: auto;
+    break-inside: auto;
+}
+
+tr, td, th {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+* {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+.fa {
+    display: none !important;
+}
+
+.print-controls {
+    display: none !important;
+}
+
+.print-cover,
+.print-home,
+.print-chapter {
+    break-before: page;
+    page-break-before: always;
+    padding-top: 1rem;
+}
+
+.print-cover,
+.print-home {
+    break-after: page;
+    page-break-after: always;
+}
+
+.print-cover {
+    break-before: auto;
+    page-break-before: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.print-cover-inner {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.print-cover-kicker,
+.print-cover-subtitle,
+.print-cover-tagline {
+    opacity: 0.85;
+}
+
+.print-cover-kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 1.3rem;
+}
+
+.print-cover .page-title {
+    margin: 2rem 0 1rem 0;
+    font-size: 4.2rem;
+}
+
+.print-cover-subtitle,
+.print-cover-tagline,
+.print-cover-translation,
+.print-cover-link {
+    font-size: 2rem;
+}
+
+.print-cover-link {
+    margin-top: 1.5rem;
+    word-break: break-word;
+}
+
+.print-home h1,
+.print-chapter h1,
+.print-section h2 {
+    break-after: avoid;
+    page-break-after: avoid;
+}
+
+.print-display-math {
+    margin: 1em 0;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.katex table,
+.katex tr,
+.katex td,
+.katex th {
+    margin: 0;
+    padding: 0;
+    border: 0 !important;
+    background: transparent !important;
+}
+
+.katex-display {
+    overflow: visible;
+}
+
+h1 + pre,
+h2 + pre,
+h3 + pre,
+h4 + pre,
+h1 + .print-display-math,
+h2 + .print-display-math,
+h3 + .print-display-math,
+h4 + .print-display-math,
+li + blockquote,
+p + blockquote {
+    break-before: avoid;
+    page-break-before: avoid;
+}
+
+.print-home .chapter,
+.print-home .section {
+    margin-top: 1.5rem;
+}
+
+.print-home .chapter li,
+.print-home .section li {
+    display: block;
+    line-height: 1.8;
+}
+
+.print-toc-entry {
+    display: block;
+}
+
+.print-cover,
+.print-home,
+.print-chapter,
+.print-section {
+    background: var(--bg) !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+.print-home .chapter {
+    padding-left: 0;
+}
+
+.print-home .section {
+    padding-left: 2rem;
+}
+
+.print-chapter:first-of-type {
+    break-before: auto;
+    page-break-before: auto;
+    padding-top: 0;
+}
+
+.print-section {
+    break-before: page;
+    page-break-before: always;
+    padding-top: 1rem;
+}
+
+/* Force <details> elements open in print so content is not hidden */
+details {
+    display: block !important;
+}
+
+details > summary {
+    display: block !important;
+    list-style: none !important;
+}
+
+details > summary::marker,
+details > summary::-webkit-details-marker {
+    display: none !important;
+}
+
+/* Keep FAQ-style Q&A together: prevent break between a <ul>/<ol> and a following <blockquote> */
+ul:has(+ blockquote),
+ol:has(+ blockquote) {
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+blockquote {
+    page-break-before: avoid;
+    break-before: avoid;
+}
